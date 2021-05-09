@@ -1,0 +1,284 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Title */
+h1{
+  font-size: 36px;
+  color: #5d512f;
+}
+h2{
+  font-size: 32px;
+  color: #5d512f;
+  line-height: 2;
+  font-weight: 700;
+  width: 1200;
+  text-align: center;
+  margin: 2.5% auto;
+}
+h2::before{
+  content:url('../Pic/Titleimg.png');
+  display:inline-block;
+  width: 50px;
+  height: 70px;
+  overflow: hidden;
+  vertical-align:text-bottom;
+}
+h2::after{
+  content: "";
+  width: 5em;
+  height: 2px;
+  background-color: #5d5d5d;
+  display: block;
+  margin: auto;
+}
+h3{
+  font-size: 22px;
+  color: #5d512f;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+}
+
+/* button */
+@keyframes sheen {
+  0% {
+    transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+
+
+
+/* nav */
+.nav{
+  display: flex;
+  width: 100%;
+  background-color: #fdf1cf;
+  position: fixed;
+  z-index: 10;
+  justify-content: space-evenly;
+}
+.nav #menu{
+  display: none;
+  margin: auto 0;
+}
+#burgerList{
+  position: fixed;
+  top: 40px;
+  left: -800px;
+  transition: 1s left;
+  background-color: #fdf1cf;
+  text-align: center;
+  line-height: 2em;
+  width: 80%;
+  height: 100%;
+}
+#burgerList.show{
+  left: 0px;
+  transition: 1s left;
+}
+.nav #Logo img{
+  width: 100px;
+}
+.navBar{
+  display: flex;
+  align-items: center;
+  color: #5d512f;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+.navBar ul{
+  margin: auto;
+  display: flex;
+  position: relative;
+  
+}
+.nav a {
+  text-decoration: none;
+  color: #5d512f;
+  margin: auto 20px;
+  
+}
+.nav a:hover {
+  color: coral;
+}
+.navBar li + li::after{
+  content: "";
+  display: block;
+  background-color: #5d512f;
+  height: 1em;
+  width: 3px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+#top-shadow {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 9;
+  -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  display: none;
+  overflow: auto;
+}
+
+img{
+  width: 20%;
+}
+
+
+/* body */
+/* banner */
+.banner{
+  width: 100%;
+  height: 600px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.banner p{
+  font-size: 50px;
+  text-align: center;
+  line-height: 600px;
+  color: white;
+}
+/* nutrition */
+.container{
+  width: 80%;
+  margin: auto;
+}
+.nutrition{
+  font-size: 12px;
+  line-height: 1.5;
+}
+.text{
+  font-size: 16px;
+  border-bottom: #5d512f 1px solide;
+}
+.how {
+  margin: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.how i{
+  transform: rotate(45deg);
+}
+.notice{
+  padding: 5%;
+  border: 1px solid #5d512f;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px #ccc;
+  line-height: 1.5;
+  text-align: center;
+}
+.noticeImage{
+  padding-bottom: 2.5%;
+}
+.start{
+  color: #5d512f;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 5% 
+}
+.start a{
+  display: inline-block;
+  margin: 5%;
+  padding: 5px;
+  color: #5d512f;
+  font-size: 24px;
+  background-color:transparent;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.start a:hover{
+  box-shadow: 0px 0px 50px 1px #ccc;
+}
+
+
+
+/* Footer */
+footer{
+  width: 100%;
+  font-size: 16px;
+  position: relative;
+  bottom: 0px;
+}
+footer .Pic{
+  width: 100%;
+  position: relative;
+  bottom: -10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .potPic {
+  position: relative;
+  bottom: -20px;
+  transition: bottom 1s 0s;
+}
+footer .potPic:hover{
+  cursor: pointer;
+  position: relative;
+  bottom: 0px;
+}
+footer .shadow{
+  position: relative;
+  bottom: -10px;
+  opacity: 0;
+}
+footer .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #837244;
+  padding-top: 20px;
+}
+.Footer span{
+  color: #c0a865;
+  line-height: 2;
+  font-weight: 700;
+}
+.footer a{
+  display: block;
+  color:#fdf1cf;
+  text-decoration: none;
+  line-height: 1.2;
+}
+@media screen and (min-width: 768px){
+  .banner p{
+    font-size: 100px;
+  }
+  h3{
+    font-size: 50px;
+  }
+  .nutrition{
+  font-size: 16px;
+  }
+  .text{
+    font-size: 24px;
+  }
+  .how span{
+    font-size: 24px
+  }
+  .icon{
+    font-size: 50px;
+  }
+  .notice{
+    font-size: 16px;
+  }
+  .noticeImage{
+    width: 50%;
+    margin: auto;
+  }
+}

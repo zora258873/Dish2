@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dish|商品介紹</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+  <link rel="stylesheet" href="../css/Item.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="Header">
+    <nav class="nav row" id="nav">
+      <div id="menu">
+        <ul class="burgerBtn" id="burgerBtn">
+          <li><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+        <ul id="burgerList">
+          <li><a href="../HTML/About.html">關於盤子</a></li>
+          <li><a href="../HTML/Chosen.html">精選餐盤</a></li>
+          <li><a href="../HTML/Products.html">餐盤總覽</a></li>
+          <li><a href="../HTML/Conbination.html">餐點搭配</a></li>
+        </ul>
+      </div>
+      <div id="Logo">
+        <a href="../HTML/Index.html"><img src="../Pic/Logo.png" alt=""></a>
+      </div>
+      <div class="navBar">
+        <ul class="navBar barList">
+          <li><a href="../HTML/About.html">關於盤子</a></li>
+          <li><a href="../HTML/Chosen.html">精選餐盤</a></li>
+          <li><a href="../HTML/Products.html">餐盤總覽</a></li>
+          <li><a href="../HTML/Conbination.html">餐點搭配</a></li>
+        </ul>
+        <div id="shopCart">
+          <li><a><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </nav>
+    class="shadow"<div id="top-shadow"></div>
+  </div>
+
+  <!-- body -->
+  <!-- banner -->
+  <div class="banner"><img src="../Pic/Restaurant/chicken.jpg" alt="">
+    <p>餐盤總覽 > 雞度鮮莓</p>
+  </div>
+  <!-- Item -->
+  <div class="item">
+    <h2>雞度鮮莓</h2>
+    <div class="context">
+      <p>嚴選上等放山雞肉，搭配營養滿分的鮮採藍莓<br>
+        新鮮食材 : 放山雞肉、藍莓、南瓜、鸚嘴豆<br>
+        保存方式 : 未開封，置於常溫保存期限3個月。開封後，請盡速食用完畢。<br>
+        食材產地 : 台灣</p>
+    </div>
+    <div class="buy"><span>NT 90 元</span><a href="#">加入購物車 </a></div>
+  </div>
+  <!-- others -->
+  <div class="otherItems">
+    <h2>相關產品</h2>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../Pic/Restaurant/chicken2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../Pic/Restaurant/fish.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../Pic/Restaurant/lamb.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../Pic/Restaurant/beef.jpg" alt=""></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Footer -->
+  <Footer>
+    <div class="footer Pic">
+      <div class="pot" id="viewShare">
+        <div class="potPic">
+          <a href="../HTML/Chosen.html"><img src="../Pic/PotArt.png" alt=""></a>
+        </div>
+        <div class="shadow">
+          <img src="../Pic/shadow(new).png" alt="">
+        </div>
+      </div>
+      <div class="pot" id="viewShare">
+        <div class="potPic">
+          <a href="../HTML/Conbination.html"><img src="../Pic/PotCom.png" alt=""></a>
+        </div>
+        <div class="shadow">
+          <img src="../Pic/shadow(new).png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="footer content">
+      <div class="connect">
+        <span>相關連結</span>
+        <a href="#">Dish粉絲專業</a>
+        <a href="#">Instagram</a>
+        <a href="#">聯絡我們</a>
+        <a href="#">服務條款</a>
+        <a href="#">隱私政策</a>
+      </div>
+      <div class="App">
+        <span>Dish應用程式</span>
+        <a href="#">iOS App</a>
+        <a href="#">Android App</a>
+      </div>
+      <div class="forRestuarant">
+        <span>店家專區</span>
+        <a href="#">如何加入Dish?</a>
+        <a href="#">聯繫分享者</a>
+      </div>
+    </div>
+  </Footer>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" crossorigin="anonymous"></script>
+  <script src="../JS/Item.js"></script>
+</body>
+
+</html>

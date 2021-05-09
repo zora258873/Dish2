@@ -1,0 +1,15 @@
+.chosenPic{
+    cursor: pointer;
+}
+img{
+    width: 25vw;
+}
+.chosenProduct{
+    display: flex;
+    width: 60vw;
+    margin: auto;
+}
+.chosenDetail{
+    display: none;
+    margin: auto;
+}

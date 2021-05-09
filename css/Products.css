@@ -1,0 +1,282 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Title */
+h1{
+  font-size: 36px;
+  color: #5d512f;
+}
+h2{
+  font-size: 32px;
+  color: #5d512f;
+  line-height: 2;
+  font-weight: 700;
+  width: 1200;
+  text-align: center;
+  margin: auto;
+}
+h2::before{
+  content:url('../Pic/Titleimg.png');
+  /* background-color: #000; */
+  /* background-image: url(/Pic/Titleimg.png); */
+  display:inline-block;
+  width: 50px;
+  height: 70px;
+  overflow: hidden;
+  vertical-align:text-bottom;
+}
+h2::after{
+  content: "";
+  width: 5em;
+  height: 2px;
+  background-color: #5d5d5d;
+  display: block;
+  margin: auto;
+}
+h3{
+  font-size: 22px;
+  color: #5d512f;
+  font-weight: 700;
+  margin: 15px 0px;
+  text-align: center;
+}
+
+/* button */
+Button{
+  width: 120px;
+  height: 40px;
+  color: #5d512f;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+}
+Button:hover{
+  text-shadow: 0px 0px 5px 1px;
+  cursor: pointer;
+  border: none;
+}
+Button::after:hover{
+  content: "";
+  width: 5em;
+  height: 2px;
+  background-color: #5d512f;
+  display: none;
+  margin: auto;  
+  box-shadow: 0px 2px 5px 1px #ccc;
+}
+
+
+
+
+/* nav */
+.nav{
+  display: flex;
+  width: 100%;
+  background-color: #fdf1cf;
+  position: fixed;
+  z-index: 10;
+  justify-content: space-evenly;
+}
+.nav #menu{
+  display: none;
+  margin: auto 0;
+}
+#burgerList{
+  position: fixed;
+  top: 41.5px;
+  left: -800px;
+  transition: 1s left;
+  background-color: #fdf1cf;
+  text-align: center;
+  line-height: 2em;
+  width: 80%;
+  height: 100%;
+}
+#burgerList.show{
+  left: 0px;
+  transition: 1s left;
+}
+.nav #Logo img{
+  width: 100px;
+}
+.navBar{
+  display: flex;
+  align-items: center;
+  color: #5d512f;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+.navBar ul{
+  margin: auto;
+  display: flex;
+  position: relative;
+  
+}
+.nav a {
+  text-decoration: none;
+  color: #5d512f;
+  margin: auto 20px;
+  
+}
+.nav a:hover {
+  color: coral;
+}
+.navBar li + li::after{
+  content: "";
+  display: block;
+  background-color: #5d512f;
+  height: 1em;
+  width: 3px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+#top-shadow {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 9;
+  -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  display: none;
+  overflow: auto;
+}
+
+
+/* body */
+.product{
+  padding-top: 80px;
+}
+
+/* productButton */
+.product ul{
+  width: 1200px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.productSelector  ul li {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5d512f;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.productSelector  ul li:hover {
+    border-bottom: 2px solid #5d512f;
+}
+
+/* productCard */
+.productCard{
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+.productCard:hover{
+  box-shadow: 0px 0px 5px 1px #ccc;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+.productCard .image{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.productCard img{
+  max-width: 100%;
+}
+.productCard .component{
+  display: flex;
+  align-items: flex-end;
+  color: #5d5d5d;
+}
+.productCard .component span::after{
+  content: "";
+  display: inline-block;
+  background-color: #5d512f;
+  height: 12px;
+  width: 2px;
+  margin: 0px 5px;
+}
+.productCard .price{
+  margin: 15px 0px;
+  color: #f00;
+  font-weight: 700;
+}
+.productCard .icon{
+  text-align: right;
+}
+.productCard .icon i{
+  margin: 0px 10px;
+}
+.clickLike {
+  color: #f00;
+}
+/* pagination */
+.pagination{
+  margin: 25px;
+}
+.pagination li a{
+  color: #5d512f;
+  text-decoration: none;
+}
+.pagination li a:hover{
+  text-decoration: underline;
+}
+
+
+/* Footer */
+footer{
+  font-size: 16px;
+}
+footer .Pic{
+  width: 100%;
+  position: relative;
+  bottom: -10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .potPic {
+  position: relative;
+  bottom: -20px;
+  transition: bottom 1s 0s;
+}
+footer .potPic:hover{
+  cursor: pointer;
+  position: relative;
+  bottom: 0px;
+}
+footer .shadow{
+  position: relative;
+  bottom: -10px;
+  opacity: 0;
+}
+footer .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #837244;
+  padding-top: 20px;
+}
+.Footer span{
+  color: #c0a865;
+  line-height: 2;
+  font-weight: 700;
+}
+.footer a{
+  display: block;
+  color:#fdf1cf;
+  text-decoration: none;
+  line-height: 1.2;
+}

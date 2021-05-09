@@ -1,0 +1,351 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Title */
+h1{
+  font-size: 36px;
+  color: #5d512f;
+}
+h2{
+  font-size: 32px;
+  color: #5d512f;
+  line-height: 2;
+  font-weight: 700;
+  width: 1200;
+  text-align: center;
+  margin: auto;
+}
+h2::before{
+  content:url(/Pic/Titleimg.png);
+  /* background-color: #000; */
+  /* background-image: url(/Pic/Titleimg.png); */
+  display:inline-block;
+  width: 50px;
+  height: 70px;
+  overflow: hidden;
+  vertical-align:text-bottom;
+}
+h2::after{
+  content: "";
+  width: 5em;
+  height: 2px;
+  background-color: #5d5d5d;
+  display: block;
+  margin: auto;
+}
+h3{
+  font-size: 22px;
+  color: #5d512f;
+  font-weight: 700;
+}
+
+/* Header */
+.Nav{
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  width: 1500px;
+  background-color: #fdf1cf;
+  position: fixed;
+  z-index: 10;
+}
+#top-shadow {
+  position: fixed;
+  top: 38px;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  z-index: 9;
+  -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  display: none;
+  overflow: auto;
+}
+.Nav .Logo img{
+  width: 150px;
+  padding: 0px 30px;
+}
+.NavBar{
+  display: flex;
+  margin: 0px 20px 0px 650px;
+  align-items: center;
+  color: #5d512f;
+  font-size: 20px;
+  font-weight: 700;
+}
+.NavBar .NavBarLink{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.NavBar li{
+list-style: none;
+position: relative;
+}
+li + li::after{
+content: "";
+display: block;
+background-color: #5d512f;
+height: 1em;
+width: 3px;
+position: absolute;
+top: 0px;
+bottom: 0px;
+margin: auto;
+}
+.NavBar a{
+  text-decoration: none;
+  color: #5d512f;
+  margin: 0px 20px;
+  display: block;
+}
+.NavBar a:hover {
+  color: coral;
+}
+.NavBar .NavIcon{
+  padding: 20px;
+}
+.NavBar .NavIcon:hover{
+  color: coral;
+  cursor: pointer;
+}
+.NavBar .LogIn{
+  padding: 20px;
+}
+.NavBar .LogIn:hover{
+  color: coral;
+  cursor: pointer;
+}
+
+.MyProfile{
+  width: 1200px;
+  display: flex;
+  position: relative;
+  top: 100px;
+  margin: auto;
+  justify-content: space-around;
+  line-height: 2;
+  /* text-align: center; */
+  font-size: 20px;
+}
+.MyProfile img{
+  width: 500px;
+  border-radius: 20px;
+}
+
+
+/* Body */
+#Title{
+  position: relative;
+  top: 150px;
+}
+.HotArtical{
+width: 1300px;
+margin: auto;
+display:flex ;
+flex-wrap: wrap;
+position: relative;
+top: 50px;
+}
+.HotArticalPic{
+  width: 450px;
+  height: 300px;
+}
+.HotArticalPic img{
+  max-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 30px;
+  margin: 0px 10px;
+}
+.HotArticalPic img:hover{
+  box-shadow:0 0 10px 10px #ccc;
+  transition: 0.5s;
+}
+.HotArticalDetail{
+  margin: 0px 20px;
+}
+.dogFootprintDiv{
+  width: 400px;
+  height: 100px;
+}
+.dogFootprintDiv .dogFootprint{
+  width: 200px;
+  height: 100px;
+  display: none;
+  margin: auto;
+}
+.HotArticalContent{
+  width: 800px;
+  color: #5d512f;
+  display: flex;
+  line-height: 1.5;
+  position: relative;
+}
+.HotArticalContent:nth-child(even){
+  direction: rtl;
+}
+.SharePic{
+  width: 50px;
+  height: 50px;
+  border: 2px #fdf1cf solid;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  bottom: 320px;
+}
+.SharePic img{
+  max-width: 150%;
+  max-height: 150%;
+  width: auto;
+  height: auto;
+}
+.HotArticalLocation{
+  display: flex;
+  align-items: center;
+}
+.HotArticalContext{
+  color: #909090;
+  direction: ltr;
+}
+.HotArticalContext:hover{
+  color: #505050;
+}
+.moreButton{
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  border-color: #fdf1cf;
+  color: #5d512f;
+  background-color: #fff;
+  outline: none;
+  display: block;
+  margin: auto;
+}
+.moreButton:hover{
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  border-color: #d37006;
+  color: #ffffff;
+  background-color: #d37006;
+}
+#moreArt{
+  position: relative;
+  top: 50px;
+}
+#moreRes{
+  position: relative;
+  top: 180px;
+}
+
+
+/* Body */
+.Artical{
+  justify-content: space-between;
+  position: relative;
+}
+.ArticalWrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+  top: 200px;
+  margin: 0 160px;
+}
+.ArticalPic{
+  width: 450px;
+  height: 200px;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+}
+.ArticalPic:hover{
+  box-shadow: 0 0 5px 5px #ccc;
+}
+.ArticalPic img{
+  max-width: 180%;
+  max-height: 180%;
+  width: auto;
+  height: auto;
+}
+.ArticalContent{
+  width: 550px;
+  padding: 10px;
+  line-height: 1.5;
+}
+.ArticalContent a:hover{
+  color: #5d512f;
+}
+.ArticalContent a{
+  color: #c2aa67;
+  text-decoration: none;
+}
+.RestaurantName{
+  color: #5d512f;
+  font-size: 24px;
+  font-weight: 700;
+}
+.ArticalLocal{
+  color: #5d512f;
+  display: flex;
+  font-size: 20px;
+}
+.ArticalDate{
+  color: #ccc;
+  line-height: 3;
+  text-align: end;
+}
+.moreButton{
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  border-color: #fdf1cf;
+  color: #5d512f;
+  background-color: #fff;
+  outline: none;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 150px;
+}
+.moreButton:hover{
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  border-color: #d37006;
+  color: #ffffff;
+  background-color: #d37006;
+}
+
+
+/* Footer */
+.Footer{
+  margin:auto;
+}
+.FooterContent{
+  position: relative;
+  top: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  background-color: #837244;
+  font-size: 16px;
+  z-index: 5;
+}
+.Footer span{
+  color: #c0a865;
+  line-height: 2;
+  font-weight: 700;
+  font-size: 18px;
+}
+.Footer a{
+  display: block;
+  color:#fdf1cf;
+  text-decoration: none;
+  line-height: 1.2;
+}
