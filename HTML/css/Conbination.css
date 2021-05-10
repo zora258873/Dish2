@@ -182,7 +182,7 @@ h3{
   /* banner */
 .banner{
   width: 80%;
-  margin: 10%;
+  margin: 0px 10%;
   display: flex;
   justify-content: space-between;
 }
