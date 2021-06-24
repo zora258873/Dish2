@@ -15,7 +15,7 @@
     font-weight: 700;
     width: 1200;
     text-align: center;
-    margin: 2.5% auto;
+    margin: 25px auto;
   }
   h2::before{
     content:url('../Pic/Titleimg.png');
@@ -54,7 +54,7 @@
   
   .more {
     width: 10%;
-    margin: 5%;
+    margin: 10px;
     display: block;
     position: relative;
     top: 25px;
@@ -182,7 +182,7 @@
 /* body */
   /* Banner */
 .swiper-container {
-    width: 100vw;
+    width: 100%;
   }
 .swiper-container img{
     max-width: 100%;
@@ -213,12 +213,16 @@
   }
 
   /* about */
+.about{
+  margin: 25px;
+}
 .aboutPic{
-    text-align: center;
+  margin: auto;
+  max-width: 500px;
 }
 .aboutPic img{
-    margin: 10%;
-    width: 80%;
+    width: 100%;
+    
 }
 .aboutContext p{
     margin:0px 10%;

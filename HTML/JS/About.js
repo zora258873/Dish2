@@ -71,17 +71,21 @@ $(function () {
     $('.storyContext p').toggle();
   });
 
-  $(window).resize(function () {
+  $(window).resize(function(){
+    showHide();
+  });
+
+  function showHide() {
     let winWidth = $(window).width();
     if (winWidth < 768) {
       $('.storyContext p').hide();
-      $('.banner').css('margin-top','10%')
+      $('.banner').css('margin-top','25px')
     }else{
       $('.storyContext p').show();
-      $('.banner').css('margin-top','5%');
+      $('.banner').css('margin-top','10px');
     };
-  });
-});
+  };
+
 
 
 //footer pic & font
@@ -105,6 +109,7 @@ $(function () {
     };
   };
 })
+
 //footer shadow
 $(function () {
   $('.potPic').mouseover(function () {

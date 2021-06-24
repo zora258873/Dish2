@@ -150,11 +150,6 @@ Button::after:hover{
   overflow: auto;
 }
 
-.container {
-  width: 1200px;
-  max-width: 100%;
-  margin: auto;
-}
 /* Banner  待排版*/
 .banner{
   width: 80%;

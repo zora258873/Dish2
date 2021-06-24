@@ -15,10 +15,14 @@ function scrollshadow() {
 };
 window.addEventListener('scroll', scrollshadow, false);
 
-//Initialize Swiper
+
+  //Initialize Swiper
   var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
     spaceBetween: 30,
-    centeredSlides: true,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -31,4 +35,6 @@ window.addEventListener('scroll', scrollshadow, false);
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    observer:true,
+    observeParents:true
   });
