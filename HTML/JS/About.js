@@ -85,7 +85,7 @@ $(function () {
       $('.banner').css('margin-top','10px');
     };
   };
-
+});
 
 
 //footer pic & font
@@ -121,5 +121,5 @@ $(function () {
     $(this).next().animate({
       opacity: '0',
     }, 200);
-  });
+  })
 })
