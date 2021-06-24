@@ -67,6 +67,7 @@ $(function () {
 
 //Story show&hide + banner size
 $(function () {
+  showHide();
   $('#iconAb').click(function () {
     $('.storyContext p').toggle();
   });
@@ -79,7 +80,9 @@ $(function () {
     let winWidth = $(window).width();
     if (winWidth < 768) {
       $('.storyContext p').hide();
-      $('.banner').css('margin-top','25px')
+      $('.banner').css{
+        'margin-top' = '25px',
+      }
     }else{
       $('.storyContext p').show();
       $('.banner').css('margin-top','10px');
